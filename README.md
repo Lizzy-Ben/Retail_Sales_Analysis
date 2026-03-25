@@ -10,6 +10,8 @@
 - [Recommendations](#recommendations)
 - [Conclusion](#conclusion)
 
+---
+
 ### Project Overview
 - **Order ID**: Unique identifier for each sales transaction, used to track individual orders.
 - **Customer Id**: Unique ID representing each customer, for customer behavior analysis.
@@ -23,6 +25,8 @@
 - **Transaction Patterns**: Includes single and multiple product purchases.
 - **Product Categories**: Six categories including Shoes, Shirt, Hat, Gloves, Jacket, Socks.
 
+---
+
 ### Objectives
 The aim is to analyze retail store sales data to identify:
 - **Product Performance** - Total sales and revenue contribution by product category.
@@ -32,6 +36,8 @@ The aim is to analyze retail store sales data to identify:
 - **Seasonal Trends** - Monthly sales trends for the current year.
 - **Customer Insights** - Top customers based on total purchase amounts.
 - **Inventory Analysis** - Products with no sales in the last quarter for slow-moving items.
+
+---
 
 ### Tools Used
 The analysis tool used to evaluate and analyze the dataset is **Power BI** for interactive dashboard creation and data visualization, with **Excel** used for initial data validation and quick calculations.
@@ -45,6 +51,8 @@ The analysis tool used to evaluate and analyze the dataset is **Power BI** for i
 - Dynamic tooltips
 - Bookmark navigation
 - Report page tooltips
+
+---
 
 ### Exploratory Data Analysis
 1. **Total Sales by Product Category:**
@@ -71,6 +79,8 @@ The analysis tool used to evaluate and analyze the dataset is **Power BI** for i
 8. **Products with No Sales in Last Quarter:**
    - Used a card visual with a DAX measure to count products with zero sales in the last 3 months.
 
+---
+
 ### Findings
 - **Total Sales by Product Category:** Shoes generated the highest sales (₦3,100,000) while socks had the lowest (₦900,000).
 - **Sales Transactions by Region:** The South contributed the most to total sales (₦2,545,400; 23.14%), followed by the East, North, and West.
@@ -80,6 +90,8 @@ The analysis tool used to evaluate and analyze the dataset is **Power BI** for i
 - **Top 5 Customers:** The top five customers contributed significantly, with Cus1488 leading at ₦2,800,000 (25.45% of total revenue).
 - **Sales Contribution by Region (%):** The South accounted for the largest share of total sales (23.14%), while the West contributed the least (14.29%).
 - **Products with No Sales in Last Quarter:** All products recorded sales in the last quarter, showing no inactive items.
+
+---
 
 ### Dashboard
 ![Retail Store Dashboard](Retail%20Store%20Dashboard.png)
@@ -101,7 +113,6 @@ The analysis tool used to evaluate and analyze the dataset is **Power BI** for i
 - **Export:** Download as PDF or PowerPoint
 
 **Power BI DAX Measures Used:**
-```dax
 // Total Sales
 Total Sales = SUM(sales_data[Total_Sales])
 
@@ -112,21 +123,32 @@ Total Customers = DISTINCTCOUNT(sales_data[Customer_Id])
 Avg Order Value = AVERAGE(sales_data[Total_Sales])
 
 // Sales by Region Percentage
-Region % = 
+Region % =
 DIVIDE(
-    SUM(sales_data[Total_Sales]),
-    CALCULATE(SUM(sales_data[Total_Sales]), ALL(sales_data[Region]))
+SUM(sales_data[Total_Sales]),
+CALCULATE(SUM(sales_data[Total_Sales]), ALL(sales_data[Region]))
 ) * 100
 
-### Recommendations   ← COPY AND PASTE THIS WHOLE SECTION
+---
+
+### Recommendations
+
 - **Product Strategy:** Expand shoes product line as the top performer with 28.18% revenue share. Bundle socks with shoes to increase sales of low-performing socks. Create seasonal bundles to leverage product combinations and increase average order value by 5-10%.
+
 - **Regional Strategy:** Increase marketing investment in South and East regions by 10% to maintain leadership. Conduct urgent market audit in West region which underperforms by 38% compared to top regions. Implement region-specific promotions and local marketing campaigns.
+
 - **Customer Retention:** Develop VIP program for top customer Cus1488 who contributes 25.45% of total revenue to reduce concentration risk. Launch loyalty points program for mid-tier customers to improve retention by 15%. Implement referral programs to acquire new high-value customers.
+
 - **Pricing Optimization:** Maintain premium positioning for Shirts at ₦327. Increase Shoes price by 5% to ₦325. Raise Jacket price by 14% from ₦140 to ₦160. Offer volume discounts for Hats (buy 2 get 10% off) to increase volume by 20%.
+
 - **Inventory Management:** Ensure efficient production and stock levels for shoes and shirts to meet high demand. Plan inventory buildup before February peak season. Implement just-in-time inventory for slow-moving items.
+
 - **Marketing Campaigns:** Launch targeted marketing campaigns in January to sustain peak sales and revenue. Analyze factors contributing to September sales dip and develop strategies such as promotions or limited-time offers during this period.
 
-### Conclusion   ← COPY AND PASTE THIS WHOLE SECTION
+---
+
+### Conclusion
+
 The retail store sales analysis offers valuable insights into product performance, regional distribution, customer behavior, and seasonal patterns. Shoes emerge as the top-performing product category with 28.18% revenue share, while the South and East regions dominate sales with 23.14% each. The top customer concentration risk (25.45% from a single customer) requires immediate attention through VIP programs and customer diversification strategies.
 
 Key findings reveal strong February peak sales (₦2.75M) and September lows (₦175,000), highlighting the need for seasonal planning. The West region's underperformance (14.29% share) presents a growth opportunity through targeted marketing and local promotions. All products remain active with no slow-moving items, indicating healthy inventory turnover.
@@ -135,8 +157,8 @@ By implementing targeted strategies to optimize product mix, address regional im
 
 ---
 
-**Report Prepared By**: [Elizabeth Ben]  
+**Report Prepared By**: Elizabeth Ben  
 **Role**: Data Analyst  
-**Tools Used**: Power BI 
+**Tools Used**: Power BI  
 **Date**: December 2025  
-**Data Source**: [Techrative Technology Limited] Retail Store Sales Database (Confidential)
+**Data Source**: Techrative Technology Limited Retail Store Sales Database (Confidential)
