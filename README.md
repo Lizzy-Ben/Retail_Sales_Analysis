@@ -101,6 +101,7 @@ The analysis tool used to evaluate and analyze the dataset is **Power BI** for i
   <em>Retail Store Sales Performance Dashboard</em>
 </div>
 
+
 **Power BI Dashboard Components:**
 
 **Executive Summary Page:**
