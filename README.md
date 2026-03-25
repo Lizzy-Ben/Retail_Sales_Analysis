@@ -1,4 +1,4 @@
-<img width="775" height="489" alt="Retail Store Dashboard" src="https://github.com/user-attachments/assets/f6ea54b2-86fc-4b4d-b664-1cf0f16d2809" /># Retail Store Sales Performance Analysis
+# Retail Store Sales Performance Analysis
 
 ## Table of Content
 - [Project_Overview](#project-overview)
