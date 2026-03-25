@@ -1,4 +1,4 @@
-# Retail Store Sales Performance Analysis
+<img width="775" height="489" alt="Retail Store Dashboard" src="https://github.com/user-attachments/assets/f6ea54b2-86fc-4b4d-b664-1cf0f16d2809" /># Retail Store Sales Performance Analysis
 
 ## Table of Content
 - [Project_Overview](#project-overview)
@@ -94,7 +94,7 @@ The analysis tool used to evaluate and analyze the dataset is **Power BI** for i
 ---
 
 ### Dashboard
-![Retail Store Dashboard](Retail%20Store%20Dashboard.png)
+![Retail Store Dashboard](<img width="775" height="489" alt="Retail Store Dashboard" src="https://github.com/user-attachments/assets/0dd5837b-2258-4758-ac16-8795f5e8f72d" />)
 
 **Power BI Dashboard Components:**
 
