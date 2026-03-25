@@ -94,7 +94,12 @@ The analysis tool used to evaluate and analyze the dataset is **Power BI** for i
 ---
 
 ### Dashboard
-![Retail Store Dashboard](<img width="775" height="489" alt="Retail Store Dashboard" src="https://github.com/user-attachments/assets/0dd5837b-2258-4758-ac16-8795f5e8f72d" />)
+
+<div align="center">
+  <img width="775" height="489" alt="Retail Store Dashboard" src="https://github.com/user-attachments/assets/f6ea54b2-86fc-4b4d-b664-1cf0f16d2809">
+  <br>
+  <em>Retail Store Sales Performance Dashboard</em>
+</div>
 
 **Power BI Dashboard Components:**
 
