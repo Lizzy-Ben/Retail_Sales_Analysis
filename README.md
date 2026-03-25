@@ -113,6 +113,7 @@ The analysis tool used to evaluate and analyze the dataset is **Power BI** for i
 - **Export:** Download as PDF or PowerPoint
 
 **Power BI DAX Measures Used:**
+```dax
 // Total Sales
 Total Sales = SUM(sales_data[Total_Sales])
 
@@ -123,13 +124,15 @@ Total Customers = DISTINCTCOUNT(sales_data[Customer_Id])
 Avg Order Value = AVERAGE(sales_data[Total_Sales])
 
 // Sales by Region Percentage
-Region % =
+Region % = 
 DIVIDE(
-SUM(sales_data[Total_Sales]),
-CALCULATE(SUM(sales_data[Total_Sales]), ALL(sales_data[Region]))
+    SUM(sales_data[Total_Sales]),
+    CALCULATE(SUM(sales_data[Total_Sales]), ALL(sales_data[Region]))
 ) * 100
 
----
+```                       
+                          
+---                       
 
 ### Recommendations
 
